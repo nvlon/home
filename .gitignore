@@ -2,4 +2,6 @@
 .idea
 venv
 __pucashe__/
-hero.py
+lesson1.py
+lesson2.py
+main.py
