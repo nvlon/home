@@ -56,6 +56,35 @@ class Three (Tho,tho2):
 # print(Three.mro())
 
 
+class Name:
+    def __init__(self, name):
+        self.name = name
+
+
+class Age:
+    def __init__(self, age):
+        self.age = age
+
+
+class Beer(Name):
+    def beer(self):
+        print(f'{self.name} is drinking beer')
+
+
+class Born(Age):
+    def year(self):
+        print(f'He was born in {2022 - self.age}')
+
+
+class Both(Beer, Born):
+    def __init__(self, name, age):
+        Beer.__init__(self, name)
+        Born.__init__(self, age)
+
+
+test = Both('Loic', 20)
+test.beer()
+test.year()
 
 
 
